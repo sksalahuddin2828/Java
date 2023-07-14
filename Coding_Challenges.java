@@ -105,3 +105,18 @@ public class Main {
 
 // 5. Finding the Average of Numbers:
 
+public class Main {
+    public static void main(String[] args) {
+        int[] numbers = {10, 20, 30, 40, 50};
+        int size = numbers.length;
+        int sum = 0;
+
+        for (int i = 0; i < size; i++) {
+            sum += numbers[i];
+        }
+
+        float average = (float)sum / size;
+        System.out.print("Average: " + average);
+        return;
+    }
+}
