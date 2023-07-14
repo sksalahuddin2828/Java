@@ -84,4 +84,24 @@ public class Main {
 
 // 4. Returning the Nth Value from the Fibonacci Sequence:
 
+public class Main {
+    static int fibonacci(int n) {
+        if (n <= 1) {
+            return n;
+        } else {
+            return fibonacci(n - 1) + fibonacci(n - 2);
+        }
+    }
+
+    public static void main(String[] args) {
+        int n = 10;
+        int fibonacci_number = fibonacci(n);
+        System.out.print(fibonacci_number);
+        return;
+    }
+}
+
 //----------------------------------------------------------------------------------------------------------------------------------------------
+
+// 5. Finding the Average of Numbers:
+
