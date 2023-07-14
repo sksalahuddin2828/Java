@@ -1,7 +1,7 @@
-//----------------------------------------------------------------Ruby Coding Challenges--------------------------------------------------------
+//----------------------------------------------------------------Java Coding Challenges--------------------------------------------------------
 
-// Ruby Coding Challenges on Numbers 
-// Write a program in Ruby to -
+// Java Coding Challenges on Numbers 
+// Write a program in Java to -
 
 // 1. Convert decimal numbers to octal numbers.
 // 2. Reverse an integer.
