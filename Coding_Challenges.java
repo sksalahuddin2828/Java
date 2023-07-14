@@ -40,6 +40,20 @@ public class Main {
 
 // 2. Reversing an Integer:
 
+public class Main {
+    public static void main(String[] args) {
+        int number = 12345;
+        int reversed_number = 0;
+
+        while (number != 0) {
+            reversed_number = reversed_number * 10 + number % 10;
+            number = number / 10;
+        }
+
+        System.out.print(reversed_number);
+        return;
+    }
+}
 
 //----------------------------------------------------------------------------------------------------------------------------------------------
 
