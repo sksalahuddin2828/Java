@@ -19,3 +19,22 @@ public class Palindrome {
         }
     }
 }
+
+
+//---------------------------------------------------------------------------------
+
+
+public class Palindrome {
+    public static boolean isPalindrome(String s) {
+        s = s.replaceAll("[^a-zA-Z0-9]", "").toLowerCase();
+        StringBuilder reversed = new StringBuilder(s).reverse();
+        return s.equals(reversed.toString());
+    }
+
+    public static void main(String[] args) {
+        String str = "A man, a plan, a canal: Panama";
+        System.out.println(isPalindrome(str) ? "True" : "False");  
+    }
+}
+
+// Output: True
