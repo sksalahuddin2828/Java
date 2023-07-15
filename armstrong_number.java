@@ -25,3 +25,25 @@ public class ArmstrongNumber {
         }
     }
 }
+
+//-----------------------------------------------------------------------------------
+
+public class ArmstrongNumber {
+    public static boolean isArmstrongNumber(int n) {
+        int numDigits = String.valueOf(n).length();
+        int sumOfPowers = 0;
+        int temp = n;
+        while (temp > 0) {
+            int digit = temp % 10;
+            sumOfPowers += Math.pow(digit, numDigits);
+            temp /= 10;
+        }
+        return n == sumOfPowers;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(isArmstrongNumber(153) ? "True" : "False");  
+    }
+}
+
+// Output: True
