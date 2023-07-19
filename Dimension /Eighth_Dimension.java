@@ -358,3 +358,36 @@ public class HypercubePlot extends JPanel {
         });
     }
 }
+
+
+//----------------------------------------------------------------------------------------------------------------------------------------------------
+//---------To use this class and see the hypercube animation, you can create a JFrame and add an instance of HypercubePlot to it. For example---------
+//----------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+import javax.swing.JFrame;
+
+public class Main {
+    public static void main(String[] args) {
+        JFrame frame = new JFrame("Hypercube Plot");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        HypercubePlot hypercubePlot = new HypercubePlot();
+        frame.add(hypercubePlot);
+
+        frame.setSize(HypercubePlot.WIDTH, HypercubePlot.HEIGHT);
+        frame.setVisible(true);
+
+        while (true) {
+            hypercubePlot.rotateHypercube();
+            hypercubePlot.repaint();
+
+            try {
+                Thread.sleep(10);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
